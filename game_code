@@ -1,0 +1,54 @@
+print("Welcome to a game of brain teasers!")
+to_play = input("Would you like to play?")
+if to_play.lower() != 'yes':
+    quit()
+
+print("Okay then! Lets goooo!!!")
+print("Oh btw it's only one word answers.")
+score = 0
+
+q1 = input("What has to be broken before you can use it?")
+if q1.lower() == 'egg':
+    print("Correct! Amazing, Ready for the next one? Here it comes~")
+    score += 1
+else: 
+    print("Aw that's incorrect... But it's okay, Better luck next time ^-^")
+
+q2 = input("What has one head, one foot, and four legs?")  
+if q2.lower() == 'bed':
+    print("Correct! Amazing, Ready for the next one? Here it comes~")
+    score += 1
+else:
+    print("Aw that's incorrect... But it's okay, Better luck next time ^-^")
+
+q3 = input("I am tall when I am young and I am short when I am old, what am I? \n")
+if q3.lower() == 'candle':
+    print("Correct! Amazing, Ready for the next one? Here it comes~")
+    score += 1
+else:
+    print("Aw that's incorrect... But it's okay, Better luck next time ^-^")
+
+q4 = input("What can run but not walk, has a mouth but never talks, has a head but never weeps, has a bed but never sleeps?")
+if q4.lower() == "river" or q4.lower() == "rivers":
+    print("Correct! Amazing, Ready for the next one? Here it comes~")
+    score += 1
+else:
+    print("Aw that's incorrect... But it's okay, We are almost at the end ^-^")
+
+q5 = input("Where can you find roads without cars, forests without trees, and cities without houses (without people)?")
+if q5.lower() == "map" or q5.lower() == "maps":    
+    print("Correct! Amazing! One last question to top this off okay? Lesgo")
+    score += 1
+else:
+    print("Aw that's incorrect... But it's okay, only one last question to top this off okay? Lesgo")
+
+q6 = input("Feed me and I live, yet give me a drink and I die.")
+if q6.lower() == "fire":
+    print("Correct! Amazing! That was the last one~")
+    score += 1
+else:
+    print("Aw that's incorrect... But it's okay, It's 'The End' ^-^")
+
+print("Let's Calculate your score, shall we?")
+print("So you got... hmm... ", str(score), " questions correct! 'o'")
+print("That's like " + str((score/6)*100) + " percent 'o'")
